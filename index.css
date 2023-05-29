@@ -1,0 +1,277 @@
+body{
+    background: black;
+}
+
+img{
+    width:calc(66.67%);
+    max-height: 600px;
+    margin-bottom: 20px;
+}
+
+
+
+#container_sfondo{
+    position:relative;
+    text-align: center;
+    top:-40px;
+    
+    
+}
+
+#titolo{
+  color:white;
+  font-size:3.5em;
+  margin-bottom:-240px;
+ 
+  
+}
+#descrizione{
+  
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+  position:relative;
+  bottom:350px;
+  border:3px solid black;
+  border-radius: 20px;
+}
+
+#descrizione h2{
+  font-size: 3.5em;
+  color: white;
+  font-family: rockwell;
+}
+#descrizione button{
+  background-color: #5403c8; 
+  color: white; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 20px; 
+  border:2px solid black;
+  width:300px;
+  border-radius: 100px;
+  font-size: 23px; 
+  cursor: pointer;
+  
+}
+
+#descrizione button:hover{
+  background-color:#110e0e;
+  color:rgb(232, 197, 25);
+  transition: color 0.3s ease-in-out;
+}
+
+
+#sfondo{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("https://blog.sadesign.it/wp-content/uploads/2021/04/arte-e-videogiochi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1000px;
+    margin-top:38px;
+    width:100%;
+    
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: baseline;
+  }
+
+
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #333;
+  }
+  
+  .mobile-menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .curtain {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgb(36 28 92 / 90%);
+    overflow: hidden;
+    transition: width 0.3s ease-out;
+    z-index: 999;
+  }
+  .curtain div {
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .curtain div img{
+    width: 50px;
+    height: 50px;
+  }
+  .curtain.show {
+    width: 200px;
+  }
+  
+  .curtain-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+  }
+  
+  .curtain-menu li {
+    margin-bottom: 10px;
+  }
+  
+
+  .curtain-menu li a {
+     color: #fff;
+     font-size: 20px;
+     letter-spacing: 1px;
+     text-decoration: none;
+    }
+  
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      margin-top: 10px;
+    }
+  }
+
+  @media(min-width:600px){
+    .curtain.show {
+        transform: translateX(100%);
+      }
+  }
+  
+  
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+  }
+  
+  .curtain.show .close-icon {
+    display: block;
+  }
+  
+ 
+footer {
+    background:linear-gradient(110.6deg, rgb(138, 19, 157) 2.2%, rgb(104, 119, 244) 100.2%);
+    padding: 20px;
+    color: #efe8e8;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-links a {
+    color: #ede2e2;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: #333;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .logo h1{
+    cursor:pointer;
+  }
+  
+  
+
+  
